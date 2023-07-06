@@ -3,6 +3,13 @@
   src: url("./assets/fonts/Lalezar-Regular.ttf");
 }
 
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   direction: rtl;
   font-family: Lalezar;
