@@ -1,17 +1,12 @@
-import React, { useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "./Slider.css";
-import { Autoplay, Pagination } from "swiper/modules";
+import React from "react";
+// import "./Slider.css";
 import { NavLink } from "react-router-dom";
 
 export default function Slider() {
   return (
     <>
-      <div className="bg-section">
-        <div className="bg-box">
+      <div className="slider_section">
+        <div className="slider_bg_box">
           <img src="images/slider-bg.jpg" alt="" />
         </div>
         <div className="container">
@@ -30,9 +25,9 @@ export default function Slider() {
                   تکنولوژی مورد نیاز، و کاربردهای متنوع است.
                 </p>
                 <div class="btn-box">
-                  <a href="" class="btn1">
+                  <NavLink to="/" className="btn1">
                     خرید کنید
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>
